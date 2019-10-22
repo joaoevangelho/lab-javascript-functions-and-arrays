@@ -1,15 +1,66 @@
 // Find the maximum
 
+function maxOfTwoNumbers(a, b) {
+ return Math.max(a, b);
+};  
+maxOfTwoNumbers(1, 2);
+
+
 // Finding Longest Word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
+
+
+function findLongestWord(arrayOfWords) {
+  if(arrayOfWords.length === 0) {
+    return null;
+  }  
+};
+/*
+  let longestWord;
+  for (let word of arrayOfWords) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+    return longestWord;
+  }
+*/
+
 
 // Calculating a Sum
 
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
+function sumArray(arrayOfNumbers) {
+let sum = 0; 
+for (let number of arrayOfNumbers) {
+  sum += number;
+}
+return sum;
+};
+
+
 // Calculate the Average
 
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+
+function averageNumbers(arrayOfNumbers) {
+  if (arrayOfNumbers.length === 0) {
+    return null;
+  }
+
+ /* 
+this way or the next. next is better
+let sum = 0; 
+for (let number of arrayOfNumbers) {
+  sum += number;
+}
+*/
+
+const sum = sumArray(arrayOfNumbers);
+const average = sum/arrayOfNumbers.length;
+return average;
+}
+
 
 // Array of Strings
 const wordsArr = [
@@ -91,3 +142,5 @@ const matrix = [
   [20, 73, 35, 29, 78, 31, 90, 1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 5, 54],
   [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ];
+
+
