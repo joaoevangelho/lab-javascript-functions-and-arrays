@@ -14,8 +14,6 @@ function findLongestWord(arrayOfWords) {
   if(arrayOfWords.length === 0) {
     return null;
   }  
-};
-/*
   let longestWord;
   for (let word of arrayOfWords) {
     if (word.length > longestWord.length) {
@@ -23,7 +21,8 @@ function findLongestWord(arrayOfWords) {
     }
     return longestWord;
   }
-*/
+  };
+
 
 
 // Calculating a Sum
@@ -76,6 +75,19 @@ const wordsArr = [
   'palace'
 ];
 
+function averageWordLength(arr) {
+  if (arr.length === 0) {
+    return null;
+  }
+
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    count += arr[i].length;
+  }
+  count = count / arr.length;
+  return count;
+}
+
 // Unique Arrays
 const wordsUnique = [
   'crab',
@@ -90,6 +102,21 @@ const wordsUnique = [
   'simple',
   'bring'
 ];
+
+function uniquifyArray(arr) {
+  if (arr === []) {
+    return [];
+  }
+  for (i = 0 ; i < arr.length; i++){
+    if (newArr.indexOf(arr[i]) === -1){
+      newArr.push(arr[i])
+      console.log(newArr)
+    }
+  }
+  return newArr;
+}
+
+
 
 // Finding Elements
 const wordsFind = [
